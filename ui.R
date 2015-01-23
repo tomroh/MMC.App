@@ -1,4 +1,5 @@
-shinyUI(fluidPage(
+library(shinythemes)
+shinyUI(fluidPage(them = shinythem("flatly"),
     
     titlePanel("M/M/C Queueing Model"),
     h6('Created by Thomas Roh'),
@@ -17,7 +18,8 @@ of servers to see comparative service levels for the following metrics:'),
     p('Average number of customers in system (L)'),
     p('Average number of customers in queue (Lq)'),
     p('Average customer time in system (W)'),
-    p('Average customer time in queue (Wq)')
+    p('Average customer time in queue (Wq)'),
+    p('Average server utilization')
     
 ),
     
